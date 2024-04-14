@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Temperature
+Comment=Gets Some temperature from ADX device
+Terminal=false
+Type=Application
+Exec=temperature
+Icon=fs/icon
+Categories=applications
