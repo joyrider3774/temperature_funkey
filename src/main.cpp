@@ -67,6 +67,8 @@ int main(int argc, char **argv)
                 }
               }
               
+              pclose(fp);
+              
               SDL_Delay(1000);
 						}
 						TTF_CloseFont(font);
