@@ -57,13 +57,14 @@ int main(int argc, char **argv)
                 else 
                 {
                   SDL_Rect rect;
-                  rect.x = (240-TextSurface->w) >> 1;
-                  rect.y = (240-TextSurface->h) >> 1;
+                  rect.x = (240-TextSurface->w) / 2;
+                  rect.y = (240-TextSurface->h) / 2;
                   rect.w = TextSurface->w;
                   rect.h = TextSurface->h;
                   SDL_BlitSurface(TextSurface,NULL,Screen,&rect);
                   //perhaps we can reuse it, but I assume not for simplicity.
                   SDL_FreeSurface(TextSurface);
+                  SDL_Flip(Screen);
                 }
               }
               
